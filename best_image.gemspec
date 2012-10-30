@@ -6,7 +6,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["7.scott.j@gmail.com"]
   gem.description   = %q{Returns the *Best Image* found from a passed url}
   gem.summary       = %q{This gem scrapes a passed web page and returns the url of the *best image* found on that page.}
-  gem.homepage      = ""
+  gem.homepage      = "https://github.com/itchy/best_image"
 
   gem.add_development_dependency "rspec"
   gem.add_dependency('image_size', '>= 1.1.1')

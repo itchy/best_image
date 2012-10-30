@@ -19,7 +19,7 @@ Or install it yourself as:
 ## Usage
   require 'best_image'
 
-  image_selector = BestImage.ImageSelector.new("http://www.path/to/page")
+  image_selector = BestImage::ImageSelector.new("http://www.path/to/page")
   
   if image_selector.best_image
     @best_image = image_selector.best_image
