@@ -17,7 +17,7 @@ Or install it yourself as:
     $ gem install best_image
 
 ## Usage
-  ```require 'best_image'
+  ``require 'best_image'
 
   image_selector = BestImage::ImageSelector.new("http://www.path/to/page")
   
@@ -26,7 +26,7 @@ Or install it yourself as:
   else   
     # do defalut action in case network is down etc.   
     image_selector.errors   
-  end```
+  end``
     
 ## Contributing
 
