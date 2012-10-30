@@ -17,18 +17,16 @@ Or install it yourself as:
     $ gem install best_image
 
 ## Usage
-  require 'best_image'
+  '''require 'best_image'
 
   image_selector = BestImage::ImageSelector.new("http://www.path/to/page")
   
   if image_selector.best_image   
-    > @best_image = image_selector.best_image
-       
+    @best_image = image_selector.best_image   
   else   
-    > # do defalut action in case network is down etc.   
+    # do defalut action in case network is down etc.   
     image_selector.errors   
-    
-  end
+  end'''
     
 ## Contributing
 
