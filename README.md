@@ -22,10 +22,12 @@ Or install it yourself as:
   image_selector = BestImage::ImageSelector.new("http://www.path/to/page")
   
   if image_selector.best_image   
-    :  @best_image = image_selector.best_image   
+    > @best_image = image_selector.best_image
+       
   else   
-    :  # do defalut action in case network is down etc.   
-    :  image_selector.errors   
+    > # do defalut action in case network is down etc.   
+    image_selector.errors   
+    
   end
     
 ## Contributing
