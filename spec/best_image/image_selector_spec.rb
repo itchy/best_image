@@ -8,6 +8,11 @@ module BestImage
       ImageFinder.should_receive(:new).with(good_url)
       ImageSelector.new(good_url)
     end
+    
+    it "should fail gracefully" do
+      best = ImageSelector.new("badurl")
+      best.best_image.should be_nil
+    end
   end
 end
   

@@ -43,6 +43,14 @@ module BestImage
           self.errors << e
           self.messages << "An error occured trying to access #{@uri}"
           raise IOError
+        rescue NoMethodError => e
+          self.errors << e
+          self.messages << "A no method error occured trying to access #{@uri}"
+          raise IOError
+        rescue Exception => e
+          self.errors << e
+          self.messages << "An error occured trying to access #{@uri}"
+          raise IOError
       end
       
       def set_doc
